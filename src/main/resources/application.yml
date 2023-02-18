@@ -1,0 +1,37 @@
+logging:
+    file:
+        name: app.log
+    level:
+        root: info
+server:
+    port: 9550
+spring:
+    application:
+        name: payment-services
+    datasource:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        password: Aai@2070
+        url: jdbc:mysql://localhost:3306/paymentschema
+        username: root
+#    flyway:
+#        enabled: true
+#        locations: classpath:db/migration
+#        password: Gajanan@123
+#        schemas: paymentschema
+#        user: root
+    jpa:
+        generate-ddl: true
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL55Dialect
+        show-sql: true
+#    security:
+#        user:
+#            name: root
+#            password: Aai@2070
+
+#eureka:
+#    client:
+#        serviceUrl:
+#            defaultZone: http://localhost:8761/eureka/            
+
