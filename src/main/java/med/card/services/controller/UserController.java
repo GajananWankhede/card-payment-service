@@ -1,7 +1,12 @@
-package com.paymentservice.controller;
+package med.card.services.controller;
 
 import java.util.List;
 
+import med.card.services.dao.UserBalance;
+import med.card.services.dao.UserRepository;
+import med.card.services.dto.UserDTO;
+import med.card.services.entity.User;
+import med.card.services.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,12 +15,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.paymentservice.dao.UserBalance;
-import com.paymentservice.dao.UserRepository;
-import com.paymentservice.dto.UserDTO;
-import com.paymentservice.entity.User;
-import com.paymentservice.service.UserService;
 
 @RestController
 @CrossOrigin(origins = "*", allowedHeaders = "*")

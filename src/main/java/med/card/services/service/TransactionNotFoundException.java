@@ -1,4 +1,4 @@
-package com.paymentservice.service;
+package med.card.services.service;
 
 public class TransactionNotFoundException extends Exception {
 

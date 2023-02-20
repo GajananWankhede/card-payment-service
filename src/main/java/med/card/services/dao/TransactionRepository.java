@@ -1,16 +1,15 @@
-package com.paymentservice.dao;
+package med.card.services.dao;
 
-import java.util.List;
-
-import javax.transaction.Transactional;
-
+import med.card.services.entity.Transaction;
+import med.card.services.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
-import com.paymentservice.entity.Transaction;
-import com.paymentservice.entity.User;
+import java.util.List;
+
 
 @Repository
 public interface TransactionRepository extends JpaRepository<Transaction,Integer> {

@@ -1,16 +1,16 @@
-package com.paymentservice.service;
+package med.card.services.service;
 
 import java.util.List;
 
+import med.card.services.assembler.UserAssembler;
+import med.card.services.dao.UserBalance;
+import med.card.services.dao.UserRepository;
+import med.card.services.dto.UserDTO;
+import med.card.services.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.paymentservice.assembler.UserAssembler;
-import com.paymentservice.dao.UserBalance;
-import com.paymentservice.dao.UserRepository;
-import com.paymentservice.dto.UserDTO;
-import com.paymentservice.entity.User;
 
 //@Service annotation tells spring boot type of object. spring boot stored it to container for dependancy injection
 @Service
@@ -24,7 +24,7 @@ public class UserService {
 	@Autowired
 	UserAssembler userAssembler;
    //method to get All User details
-	public List<UserDTO> getAllUsers() {	
+	public List<UserDTO> getAllUsers() {
 
 		List<User> userEntityList = userRepo.findAll();
 
@@ -34,7 +34,7 @@ public class UserService {
 	}
 	
 	
-	public List<UserBalance> getUserBalance() {	
+	public List<UserBalance> getUserBalance() {
 
 		List<UserBalance> userBalance = userRepo.getUserBalance();
 

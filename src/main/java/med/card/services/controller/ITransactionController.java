@@ -1,12 +1,10 @@
-package com.paymentservice.controller;
+package med.card.services.controller;
 
 import java.util.List;
 
+import med.card.services.dao.MonthReport;
+import med.card.services.dto.TransactionDTO;
 import org.springframework.web.bind.annotation.RequestBody;
-
-import com.paymentservice.dao.MonthReport;
-import com.paymentservice.dto.TransactionDTO;
-
 
 public interface ITransactionController {
 

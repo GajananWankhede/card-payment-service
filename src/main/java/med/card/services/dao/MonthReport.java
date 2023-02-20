@@ -1,4 +1,4 @@
-package com.paymentservice.dao;
+package med.card.services.dao;
 
 public interface MonthReport {
 	

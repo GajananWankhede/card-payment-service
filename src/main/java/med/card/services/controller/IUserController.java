@@ -1,8 +1,8 @@
-package com.paymentservice.controller;
+package med.card.services.controller;
+
+import med.card.services.dto.UserDTO;
 
 import java.util.List;
-
-import com.paymentservice.dto.UserDTO;
 
 
 

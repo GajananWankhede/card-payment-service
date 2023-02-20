@@ -1,8 +1,7 @@
-package com.paymentservice.service;
+package med.card.services.service;
+import med.card.services.dto.UserDTO;
 
 import java.util.List;
-
-import com.paymentservice.dto.UserDTO;
 
 public interface IUserService {
 	// method declaration without definition 

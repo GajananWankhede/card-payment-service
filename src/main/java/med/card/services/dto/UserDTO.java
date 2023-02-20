@@ -1,4 +1,4 @@
-package com.paymentservice.dto;
+package med.card.services.dto;
 
 
 //exact clone of User Entity(Data Transfer Object)

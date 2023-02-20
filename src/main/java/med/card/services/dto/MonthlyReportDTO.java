@@ -1,4 +1,4 @@
-package com.paymentservice.dto;
+package med.card.services.dto;
 
 public class MonthlyReportDTO {
 	

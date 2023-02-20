@@ -1,13 +1,11 @@
-package com.paymentservice.assembler;
-
+package med.card.services.assembler;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import med.card.services.dto.UserDTO;
+import med.card.services.entity.User;
 import org.springframework.stereotype.Component;
-
-import com.paymentservice.dto.UserDTO;
-import com.paymentservice.entity.User;
 
 @Component
 public class UserAssembler {

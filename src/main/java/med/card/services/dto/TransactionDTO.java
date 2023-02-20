@@ -1,11 +1,11 @@
-package com.paymentservice.dto;
+package med.card.services.dto;
 
 import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.paymentservice.entity.User;
+import med.card.services.entity.User;
 
 
 //exact clone of Transaction Entity (Data Transfer Object)

@@ -1,8 +1,9 @@
-package com.paymentservice.service;
+package med.card.services.service;
+
+import med.card.services.dto.TransactionDTO;
 
 import java.util.List;
 
-import com.paymentservice.dto.TransactionDTO;
 
 public interface ITransactionService {
 	// method declaration without definition
